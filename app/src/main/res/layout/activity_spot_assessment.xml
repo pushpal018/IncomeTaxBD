@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/background_color"
+tools:context=".SpotAssessmentActivity">
+
+
+<soup.neumorphism.NeumorphCardView
+    android:id="@+id/edittext_card"
+    style="@style/Widget.Neumorph.CardView"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:neumorph_shadowElevation="6dp">
+
+    <TextView
+        android:id="@+id/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:singleLine="false"
+        android:text="স্পট এ্যাসেসমেন্ট"
+        android:textColor="@color/text_color"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</soup.neumorphism.NeumorphCardView>
+
+<soup.neumorphism.NeumorphCardView
+    style="@style/Widget.Neumorph.CardView"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="8dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/edittext_card"
+    app:neumorph_shapeType="basin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:autoLink="all"
+                android:background="#DAE8FC"
+                android:linksClickable="true"
+                android:padding="5dp"
+                android:text="আয়কর বিধিমালার বিধি ৩৮ই এর উপবিধি (২) সংশোধনের মাধ্যমে স্পট এ্যাসেস এবং মেন্টের ক্ষেত্রে আয়করের হার নিম্নরূপে পুনর্বিন্যাস করা হয়েছে:"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:autoLink="all"
+                android:linksClickable="true"
+                android:padding="5dp"
+                android:text="• ব্যবসার ক্ষেত্রেঃ"
+                android:textColor="@color/text_color"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+
+                <TableRow
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="#0079D6"
+                    android:weightSum="5"
+                    android:padding="5dp"
+                    >
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:text="প্রারম্ভিক পুঁজির পরিমাণ"
+                        android:textColor="@color/white" />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:text="আয়করের পরিমাণ (টাকা)"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="3"
+                        android:padding="2dp"
+                        android:text="প্রযোজ্য এলাকা"
+                        android:textColor="@color/white" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="5dp"
+                    android:background="#DAE8FC"
+                    android:padding="5dp"
+                    android:weightSum="5">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:text="৬ লক্ষ টাকা পর্যন্ত" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:text="৩,০০০/-" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="3"
+                        android:padding="2dp"
+                        android:text="সিটি কর্পোরেশন ও জেলা সদরে অবস্থিত পৌরসভা ব্যতীত অন্যান্য এলাকা" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_marginBottom="5dp"
+                    android:background="#DAE8FC"
+                    android:padding="5dp"
+                    android:weightSum="5">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:text="৭ লক্ষ টাকা পর্যন্ত" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:text="৩,৫০০/-" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="3"
+                        android:padding="2dp"
+                        android:text="জেলা সদরে অবস্থিত পৌরসভা এবং \nসিটি কর্পোরেশন ব্যতীত অন্যান্য এলাকা" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_marginBottom="5dp"
+                    android:background="#DAE8FC"
+                    android:padding="5dp"
+                    android:weightSum="5">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:text="৮ লক্ষ টাকা পর্যন্ত" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:text="৪,০০০/-" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="3"
+                        android:padding="2dp"
+                        android:text="যে কোন এলাকা" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_marginBottom="5dp"
+                    android:background="#DAE8FC"
+                    android:padding="5dp"
+                    android:weightSum="5">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:text="১০ লক্ষ টাকা পর্যন্ত" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:text="৫,০০০/-" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="3"
+                        android:padding="2dp"
+                        android:text="যে কোন এলাকা" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_marginBottom="5dp"
+                    android:background="#DAE8FC"
+                    android:padding="5dp"
+                    android:weightSum="5">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:text="১৫ লক্ষ টাকা পর্যন্ত" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:text="১০,০০০/-" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="3"
+                        android:padding="2dp"
+                        android:text="যে কোন এলাকা" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:autoLink="all"
+                android:linksClickable="true"
+                android:padding="5dp"
+                android:text="• পেশার ক্ষেত্রেঃ"
+                android:textColor="@color/text_color"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+
+                <TableRow
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="#0079D6"
+                    android:weightSum="6"
+                    android:padding="5dp"
+                    >
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="2"
+                        android:padding="2dp"
+                        android:text="পেশায় নিয়োজিত থাকার সময়কাল"
+                        android:textColor="@color/white" />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:text="করের পরিমাণ"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="3"
+                        android:padding="2dp"
+                        android:text="প্রযোজ্য এলাকা"
+                        android:textColor="@color/white" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="5dp"
+                    android:background="#DAE8FC"
+                    android:padding="5dp"
+                    android:weightSum="6">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="2"
+                        android:padding="2dp"
+                        android:text="৩ বৎসর পর্যন্ত" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:text="৩,০০০/-" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="3"
+                        android:padding="2dp"
+                        android:text="সিটি কর্পোরেশন ও জেলা সদরে অবস্থিত পৌরসভা ব্যতীত অন্যান্য এলাকা" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_marginBottom="5dp"
+                    android:background="#DAE8FC"
+                    android:padding="5dp"
+                    android:weightSum="6">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="2"
+                        android:padding="2dp"
+                        android:text="৪ বৎসর পর্যন্ত" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:text="৩,৫০০/-" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="3"
+                        android:padding="2dp"
+                        android:text="জেলা সদরে অবস্থিত পৌরসভা এবং \nসিটি কর্পোরেশন ব্যতীত অন্যান্য এলাকা" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_marginBottom="5dp"
+                    android:background="#DAE8FC"
+                    android:padding="5dp"
+                    android:weightSum="6">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="2"
+                        android:padding="2dp"
+                        android:text="৫ বৎসর পর্যন্ত" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:text="৪,০০০/-" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="3"
+                        android:padding="2dp"
+                        android:text="যে কোন এলাকা" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_marginBottom="5dp"
+                    android:background="#DAE8FC"
+                    android:padding="5dp"
+                    android:weightSum="6">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="2"
+                        android:padding="2dp"
+                        android:text="১০ বৎসর পর্যন্ত" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:text="৫,০০০/-" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="3"
+                        android:padding="2dp"
+                        android:text="যে কোন এলাকা" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_marginBottom="5dp"
+                    android:background="#DAE8FC"
+                    android:padding="5dp"
+                    android:weightSum="6">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="2"
+                        android:padding="2dp"
+                        android:text="১৫ লক্ষ টাকা পর্যন্ত" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:text="১০,০০০/-" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="3"
+                        android:padding="2dp"
+                        android:text="যে কোন এলাকা" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:autoLink="all"
+                android:background="#DAE8FC"
+                android:linksClickable="true"
+                android:padding="5dp"
+                android:text="পরিবর্তিত এ হার ২০১৬-২০১৭ কর বছর হতে প্রযোজ্য হবে।"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:autoLink="all"
+                android:background="#DAE8FC"
+                android:linksClickable="true"
+                android:padding="5dp"
+                android:text="• অন্যদিকে, বিধি ২৪ সংশোধনের মাধ্যমে স্পট এ্যসেসমেন্টের আয়কর রিটার্নে অনুরূপ কর হার সংশোধন করা হয়েছে।"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</soup.neumorphism.NeumorphCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

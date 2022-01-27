@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/homepage"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            app:layout_constraintVertical_bias="1.0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <soup.neumorphism.NeumorphCardView
+
+                        style="@style/Widget.Neumorph.CardView"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.13"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+                            <soup.neumorphism.NeumorphImageButton
+                                style="@style/Widget.Neumorph.ImageButton"
+                                android:layout_width="79dp"
+                                android:layout_height="79dp"
+                                android:layout_gravity="center"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/etin"
+                                app:neumorph_shadowElevation="3dp"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <soup.neumorphism.NeumorphButton
+                                android:id="@+id/etin"
+                                style="@style/Widget.Neumorph.Button"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="4dp"
+                                android:text="e-TIN"
+                                android:textAllCaps="false"
+                                android:textColor="@color/text_color"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+                    </soup.neumorphism.NeumorphCardView>
+
+                    <soup.neumorphism.NeumorphCardView
+                        style="@style/Widget.Neumorph.CardView"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.88"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+                            <soup.neumorphism.NeumorphImageButton
+                                style="@style/Widget.Neumorph.ImageButton"
+                                android:layout_width="79dp"
+                                android:layout_height="79dp"
+                                android:layout_gravity="center"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/map"
+                                app:neumorph_shadowElevation="3dp"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <soup.neumorphism.NeumorphButton
+                                android:id="@+id/taxzone"
+                                style="@style/Widget.Neumorph.Button"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="4dp"
+                                android:text="Taxes Zone"
+                                android:textAllCaps="false"
+                                android:textColor="@color/text_color"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+                    </soup.neumorphism.NeumorphCardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <soup.neumorphism.NeumorphCardView
+
+                        style="@style/Widget.Neumorph.CardView"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.13"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+                            <soup.neumorphism.NeumorphImageButton
+                                style="@style/Widget.Neumorph.ImageButton"
+                                android:layout_width="79dp"
+                                android:layout_height="79dp"
+                                android:layout_gravity="center"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/calculator"
+                                app:neumorph_shadowElevation="3dp"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <soup.neumorphism.NeumorphButton
+                                android:id="@+id/calculator"
+                                style="@style/Widget.Neumorph.Button"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="4dp"
+                                android:text="Tax Calculator"
+                                android:textAllCaps="false"
+                                android:textColor="@color/text_color"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+                    </soup.neumorphism.NeumorphCardView>
+
+                    <soup.neumorphism.NeumorphCardView
+
+                        style="@style/Widget.Neumorph.CardView"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.88"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <soup.neumorphism.NeumorphImageButton
+                                style="@style/Widget.Neumorph.ImageButton"
+                                android:layout_width="79dp"
+                                android:layout_height="79dp"
+                                android:layout_gravity="center"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/guideline"
+                                app:neumorph_shadowElevation="3dp"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <soup.neumorphism.NeumorphButton
+                                android:id="@+id/guidelineBtn"
+                                style="@style/Widget.Neumorph.Button"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="4dp"
+                                android:text="Guideline"
+                                android:textAllCaps="false"
+                                android:textColor="@color/text_color"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </soup.neumorphism.NeumorphCardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <soup.neumorphism.NeumorphCardView
+
+                        style="@style/Widget.Neumorph.CardView"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.13"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <soup.neumorphism.NeumorphImageButton
+                                style="@style/Widget.Neumorph.ImageButton"
+                                android:layout_width="79dp"
+                                android:layout_height="79dp"
+                                android:layout_gravity="center"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/spot"
+                                app:neumorph_shadowElevation="3dp"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <soup.neumorphism.NeumorphButton
+                                android:id="@+id/spot"
+                                style="@style/Widget.Neumorph.Button"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="4dp"
+                                android:text="Spot Assessment"
+                                android:textAllCaps="false"
+                                android:textColor="@color/text_color"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </soup.neumorphism.NeumorphCardView>
+
+                    <soup.neumorphism.NeumorphCardView
+
+                        style="@style/Widget.Neumorph.CardView"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.88"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <soup.neumorphism.NeumorphImageButton
+                                style="@style/Widget.Neumorph.ImageButton"
+                                android:layout_width="79dp"
+                                android:layout_height="79dp"
+                                android:layout_gravity="center"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/faq"
+                                app:neumorph_shadowElevation="3dp"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <soup.neumorphism.NeumorphButton
+                                android:id="@+id/faq"
+                                style="@style/Widget.Neumorph.Button"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="4dp"
+                                android:text="FAQS"
+                                android:textAllCaps="false"
+                                android:textColor="@color/text_color"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </soup.neumorphism.NeumorphCardView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

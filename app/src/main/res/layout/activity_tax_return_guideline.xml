@@ -1,0 +1,1205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    tools:context=".TaxReturnGuidelineActivity">
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:neumorph_shapeType="flat">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:padding="4dp"
+                android:singleLine="false"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="FQGs"
+                android:textColor="@color/text_color"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+            </soup.neumorphism.NeumorphCardView>
+
+
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:neumorph_shapeType="pressed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/que1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:gravity="center_vertical"
+                        android:padding="4dp"
+                        android:singleLine="false"
+                        android:text="আয়কর কি?"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:drawableEndCompat="@drawable/down_arrow" />
+
+                    <TextView
+                        android:id="@+id/ans1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:singleLine="false"
+                        android:text="আয়কর হচ্ছে ব্যক্তি বা সত্ত্বার আয় বা লভ্যাংশরে উপর প্রদেয় কর । আয়কর অধ্যাদেশ ১৯৮৪ এর আওতায় কর বলতে অধ্যাদেশ অনুযায়ী প্রদেয় আয়কর, অতিরিক্ত কর, বাড়তি লাভের কর, এতদসংক্রান্ত জরিমানা, সুদ বা আদায় যোগ্য অর্থকে বুঝায়। অন্য ভাবে বলা যায় যে, কর হচ্ছে রাষ্ট্রের সকল জনসাধারনের স্বার্থে রাষ্ট্রের ব্যয় নির্বাহের জন্য সরকারকে প্রদত্ত বাধ্যতামূলক অর্থ।"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:neumorph_shapeType="pressed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/que2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:gravity="center_vertical"
+                        android:padding="4dp"
+                        android:singleLine="false"
+                        android:text="কোন ব্যক্তি আয়কর প্রদানের জন্য উপযুক্ত?"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:drawableEndCompat="@drawable/down_arrow" />
+
+                    <TextView
+                        android:id="@+id/ans2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:singleLine="false"
+                        android:text="অর্থ আইন ২০১৫ এর আওতায় প্রত্যেক ব্যক্তি করদাতা (অনিবাসী বাংলাদেশী সহ), হিন্দু যৌথ পরিবার, অংশীদারী ফার্ম, ব্যক্তি সংঘ এবং আইনের দ্বারা সৃষ্ট কৃত্রিম ব্যক্তির আয়ের সীমা ২,৫০,০০০/= টাকার উপরে হলে আয়কর প্রদানের জন্য উপযুক্ত বলে বিবেচিত হবেন। তবে\n(১) মহিলা এবং ৬৫ বৎসর বা তদুর্ধ বয়সের ব্যক্তি করদাতা আয় ৩,০০,০০০/= টাকা এর উপরে হলে তিনি আয়কর প্রদানের উপযুক্ত হবনে।\n(২) প্রতিবন্ধি করদাতা আয় ৩,৭৫,০০০/= টাকা এর উপরে হলে তিনি আয়কর প্রদানের উপযুক্ত হবেন। (৩) গেজেট ভুক্ত যুদ্ধাহত মুক্তিযোদ্ধা করদাতার আয় সীমা ৪,২৫,০০০/= টাকা এর উপরে হলে তিনি আয়কর প্রদানের উপযুক্ত হবেন।"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:neumorph_shapeType="pressed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/que3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:gravity="center_vertical"
+                        android:padding="4dp"
+                        android:singleLine="false"
+                        android:text="রিটার্ন ফরম কোথায় পাওয়া যাবে?"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:drawableEndCompat="@drawable/down_arrow" />
+
+                    <TextView
+                        android:id="@+id/ans3"
+                        android:autoLink="web"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:singleLine="false"
+                        android:text="সকল আয়কর অফিসে আয়কর রিটার্ন ফরম পাওয়া যায়। একজন করদাতা সারা বছর বিনামূল্যে আয়কর অফিস থেকে রিটার্ন ফরম সংগ্রহ করতে পারেন। জাতীয় রাজস্ব বোর্ডের ওয়েব সাইট www.nbr.gov.bd থেকেও রিটার্ন ফরম download করা যাবে। রিটার্নের ফটোকপিও গ্রহণযোগ্য।"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:neumorph_shapeType="pressed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/que4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:gravity="center_vertical"
+                        android:padding="4dp"
+                        android:singleLine="false"
+                        android:text="রিটার্ন দাখিলের সময়?"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:drawableEndCompat="@drawable/down_arrow" />
+
+                    <TextView
+                        android:id="@+id/ans4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:singleLine="false"
+                        android:text="ব্যক্তি-করদাতাকে Tax Day (কর দিবস) এর মধ্যে আয়কর রিটার্ন দাখিল করতে হবে। 2016-17 কর বছরের জন্য 30 নভেম্বর 2016 তারিখ হচ্ছে কর দিবস, অর্থাৎ রিটার্ন দাখিলের সর্বশেষ তারিখ। একজন ব্যক্তি করদাতা ১ জুলাই 2016 থেকে ৩০ নভেম্বর 2016 তারিখের মধ্যে 2016-17 কর বছরের রিটার্ন দাখিল করবেন। নির্ধারিত সময়ের মধ্যে রিটার্ন দাখিল করা সম্ভব না হলে করদাতা রিটার্ন দাখিলের সময়সীমা বাড়ানোর জন্য বিধি নির্ধারিত ফরমে উপযুক্ত কারণ উল্লেখপূর্বক উপ কর কমিশনারের কাছে সময়ের আবেদন করতে পারেন। সময় মঞ্জুর হলে বর্ধিত সময়ের মধ্যে সাধারণ অথবা সার্বজনীন স্বনির্ধারণী পদ্ধতির আওতায় রিটার্ন দাখিল করা যাবে। জাতীয় রাজস্ব বোর্ডের ওয়েবসাইট www.nbr.gov.bd থেকে সময় বৃদ্ধির আবেদন ফরম download করা যায়।\nনির্ধারিত সময়ের মধ্যে রিটার্ন দাখিল না করা হলে উপ কর কমিশনার বিলম্ব সুদ (delay interest) আরোপ করবেন। তাই নির্ধারিত সময়ের মধ্যে রিটার্ন দাখিল করা করদাতার জন্য সুবিধাজনক।"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:neumorph_shapeType="pressed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/que5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:gravity="center_vertical"
+                        android:padding="4dp"
+                        android:singleLine="false"
+                        android:text="রিটার্ন কোথায় দাখিল করতে হবে? "
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:drawableEndCompat="@drawable/down_arrow" />
+
+                    <TextView
+                        android:id="@+id/ans5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:singleLine="false"
+                        android:text="প্রত্যেক শ্রেণীর করদাতার রিটার্ন দাখিলের জন্য আয়কর সার্কেল নির্দিষ্ট করা আছে। যেমন, ঢাকা সিভিল জেলায় অবস্থিত যে সকল বেসামরিক সরকারি কর্মকর্তা/ কর্মচারী ও পেনশনভুক্ত কর্মকর্তা/কর্মচারীর নাম A, B এবং C অক্ষরগুলো দিয়ে শুরু হয়েছে তাদেরকে কর অঞ্চল-৪, ঢাকা এর কর সার্কেল-৭১ এ রিটার্ন জমা দিতে হবে। পুরোনো করদাতাগণ তাদের বর্তমান সার্কেলে রিটার্ন জমা দেবেন। নতুন করদাতাগণ তাদের নাম, চাকুরীস্থল বা ব্যবসা প্রতিষ্ঠানের ঠিকানার ভিত্তিতে নির্ধারিত সার্কেলে ১২ সংখ্যার টিআইএন (e-TIN) উল্লেখ করে আয়কর রিটার্ন দাখিল করবেন। করদাতাগণ প্রয়োজনে নিকটস্থ আয়কর অফিস বা কর পরামর্শ কেন্দ্র থেকে আয়কর রিটার্ন দাখিল সংক্রান্ত তথ্য জেনে নিতে পারেন।\nপ্রতি বছর দেশের বিভিন্ন স্থানে অনুষ্ঠিত আয়কর মেলায় করদাতাগণ আয়কর রিটার্ন দাখিল করতে পারেন। রিটার্ন দাখিলের সময় করদাতা বিদেশে অবস্থান করলে বিদেশে অবস্থিত বাংলাদেশ দূতাবাসেও রিটার্ন দাখিল করা যায়।"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:neumorph_shapeType="pressed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/que6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:gravity="center_vertical"
+                        android:padding="4dp"
+                        android:singleLine="false"
+                        android:text="রিটার্ন দাখিলা না করলে কী হয়?"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:drawableEndCompat="@drawable/down_arrow" />
+
+                    <TextView
+                        android:id="@+id/ans6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:singleLine="false"
+                        android:text="কোন করদাতা আয়কর অধ্যাদেশের ৭৫ ধারানুসারে নির্ধারিত সময়ের মধ্যে আয়কর রিটার্ন দাখিলে ব্যর্থ হলে তার উপর আয়কর অধ্যাদেশের ১২৪ ধারা অনুযায়ী জরিমানা, 73 ধারা অনুযায়ী 50 শতাংশ অতিরিক্ত সরলসুদ এবং 73এ ধারা অনুযায়ী বিলম্ব সুদ (delay interest) আরোপযোগ্য হবে। যে ক্ষেত্রে করদাতা রিটার্ন দাখিলের জন্য সময়ের আবেদন করে উপ কর কমিশনার কর্তৃক মঞ্জুরকৃত বর্ধিত সময়ের মধ্যে রিটার্ন দাখিল করবেন, সে ক্ষেত্রে করদাতার উপর জরিমানা আরোপিত হবে না, তবে অতিরিক্ত সরল সুদ ও বিলম্ব সুদ আরোপিত হবে।"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:neumorph_shapeType="pressed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/que7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:gravity="center_vertical"
+                        android:padding="4dp"
+                        android:singleLine="false"
+                        android:text="আয়করকে কেন প্রগতিশীল কর বলা হয়?"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:drawableEndCompat="@drawable/down_arrow" />
+
+                    <TextView
+                        android:id="@+id/ans7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:singleLine="false"
+                        android:text="আয়কর হচ্ছে ব্যক্তি বা সত্ত্বার উপর সরকার কর্তৃক আরোপিত কর, যা আয় বা লভ্যাংশের পরিমান ভেদে পরিবর্তিত হয়। প্রগতিশীল কর হচ্ছে সেই কর ব্যবস্থা যাতে করদাতার আয় বৃদ্ধির সঙ্গে সঙ্গে করহার বৃদ্ধি হয়। আয়কর আরোপিত হয় করদাতার কর পরিশোধ করার ক্ষমতার উপর। তাই আয়করকে প্রগতিশীল কর বলা হয়।"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:neumorph_shapeType="pressed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/que8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:gravity="center_vertical"
+                        android:padding="4dp"
+                        android:singleLine="false"
+                        android:text="আয়করের জন্য আয়ের খাত কি কি?"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:drawableEndCompat="@drawable/down_arrow" />
+
+                    <TextView
+                        android:id="@+id/ans8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:singleLine="false"
+                        android:text="Ans:-আয়কর অধ্যাদশে ১৯৮৪ অনুযায়ী আয়ের খাত সমূহ নম্নিরূপ:\n\n1. বেতনাদি\n2. নিরাপত্তা জামানতের উপর সুদ\n3. গৃহ সম্পত্তির আয়\n4. কৃষি আয়\n5. ব্যবসা বা পেশার আয়\n6. মূলধনী মুনাফা\n7. অন্যান্য উৎস হতে আয়। তবে রিটার্ন জমা দেয়ার সময় নিম্নলিখিত আয়ের খাতগুলি সম্পৃক্ত হবে।\n৪. ফার্মের আয়ের অংশ\n9. স্বামী / স্ত্রী বা অপ্রাপ্ত বয়স্ক সন্তানের আয়"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:neumorph_shapeType="pressed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/que9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:gravity="center_vertical"
+                        android:padding="4dp"
+                        android:singleLine="false"
+                        android:text="ন্যূনতম কর কি?"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:drawableEndCompat="@drawable/down_arrow" />
+
+                    <TextView
+                        android:id="@+id/ans9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:singleLine="false"
+                        android:text="অর্থ আইন ২০১৫ মোতাবেক সাধারণভাবে করমুক্ত আয়ের সীমা ১৫০০০০/০০। করমুক্ত আয়ের সীমা অতিক্রম করলে করদাতাকে এলাকা ভেদে ন্যূনতম যে কর পরিশোধ করতে হয় তাকে ন্যূনতম কর বলে। ন্যূনতম করের পরিমান যথাক্রমে ৫০০০/০০ (ঢাকা ও চট্টগ্রাম সিটিকর্পোরেশন এরিয়া), ৪০০০/০০ (অন্য সিটিকর্পোরেশন এরিয়া), ৩০০০/০০(সিটিকর্পোরেশন এর বাইরে অন্য যেকোনো এরিয়া)"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:neumorph_shapeType="pressed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/que10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:gravity="center_vertical"
+                        android:padding="4dp"
+                        android:singleLine="false"
+                        android:text="আয়কর নিবন্ধন কি?"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:drawableEndCompat="@drawable/down_arrow" />
+
+                    <TextView
+                        android:id="@+id/ans10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:singleLine="false"
+                        android:text="আয়কর অধ্যাদেশ ১৯৮৪ এর আওতায় ন্যূনতম করমুক্ত আয়ের সীমা অতিক্রম করলে কিংবা ধারা 75(1A) তে বর্ণিত তালিকার ক্ষেত্রে রিটার্ন দাখিল বাধ্যতামূলক না, রিটার্ন দাখিলের জন্য একজন করদাতাকে জাতীয় রাজস্ব বোর্ডের অন্তর্গত কোন আয়কর কমিশনারেটের অধীনে সার্কেলে থেকে ১২ ডিজিটের TIN গ্রহণ করে নবিন্ধতি হতে হয়। একেই আয়কর নিবন্ধন বলে।"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:neumorph_shapeType="pressed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/que11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:gravity="center_vertical"
+                        android:padding="4dp"
+                        android:singleLine="false"
+                        android:text="ই-টিআইএন কি?"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:drawableEndCompat="@drawable/down_arrow" />
+
+                    <TextView
+                        android:id="@+id/ans11"
+                        android:autoLink="web"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:singleLine="false"
+                        android:text="ই-টিআইএন মানে ইলেকট্রনকি ট্যাক্স আইডেনটিফিকেশন নাম্বার, ইহা আয়কর নিবন্ধনের আধুনিক সংস্করন। ইহা ১২ ডিজিটের ১টি নম্বর। একজন করদাতাকে সহজে, ঘরেবসে অনলাইনে নিবন্ধন পেতে এই ব্যবস্থা গ্রহণ করা হয়েছে। www. incometax.gov.bd এই সাইট গেলে ই-টিআইএন নিবন্ধন নেওয়া যাবে।"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:neumorph_shapeType="pressed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/que12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:gravity="center_vertical"
+                        android:padding="4dp"
+                        android:singleLine="false"
+                        android:text="ই-টিআইএন প্রাপ্তির জন্য প্রয়োজনীয় ডকুমেন্ট কি লাগে?"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:drawableEndCompat="@drawable/down_arrow" />
+
+                    <TextView
+                        android:id="@+id/ans12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:singleLine="false"
+                        android:text="ধরনের উপর নির্ভর করবে টিআইএন সার্টিফিকেট পেতে কি কি তথ্য লাগবে নিম্নে ছক আকারে দেওয়া হলোঃ Individual প্রাপ্ত বয়স্ক: করদাতার নাম, বৈধ্য জাতীয় পরিচয়পত্র, নম্বর, জন্ম তারিখ (জাতীয় পরিচয় পত্র অনুযায়ী) অপ্রাপ্ত বয়স্ক: Individual করদাতার নাম, অভিবাবকের নাম, অভিবাবকের টিআইএন, করদাতার ছবি(সফট কপি পাসপোর্ট সাইজের) বিদেশী, বাংলাদেশি without NID: পাসপোর্ট নম্বর, পাসপোর্ট ইস্যুর তারিখ, ভিসা নম্বর, ভিসা ইস্যুর তারিখ, কর দাতার ছবি (সফট কপি, পাসপোর্ট সাইজ) কোম্পনির নাম (নিবন্ধন অনুযায়ী) নিবন্ধন নম্বর ও তারিখ। ফার্মে (Registered): ফার্মের নাম (নিবন্ধ অনুযায়ী), নিবন্ধন নম্বর ও তারিখ। কোম্পনির নাম (নিবন্ধন অনুযায়ী) নিবন্ধন নম্বর ও তারিখ। ফার্মে (Registered): ফার্মের নাম অনুযায়ী), নিবন্ধন নম্বর ও তারিখ। ফার্মে (Unregistered): ফার্মের টিআইএন নম্বর এবং তাদের নাম। Other (AOP, HUF local Authority, AJP: Authorized person / কর্তা ব্যক্তির। "
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:neumorph_shapeType="pressed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/que13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:gravity="center_vertical"
+                        android:padding="4dp"
+                        android:singleLine="false"
+                        android:text="আয়কর সনদ কি?"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:drawableEndCompat="@drawable/down_arrow" />
+
+                    <TextView
+                        android:id="@+id/ans13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:singleLine="false"
+                        android:text="করদাতা পূর্ববর্তী কর বর্ষের আয়কর রিটার্ন জমাদিলে কর সার্কেল কর্তিক যাচাই বাছাই ও মূল্যায়ন শেষে করদাতাকে সংশ্লিষ্ট সার্কেলের উপকর কমিশনার কর্তিক যে সনদ প্রদান করা হয় তাকে আয়কর সনদ বলে।"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:neumorph_shapeType="pressed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/que14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:gravity="center_vertical"
+                        android:padding="4dp"
+                        android:singleLine="false"
+                        android:text="আমি ঠিকানা কিভাবে পরিবর্তন করতে পারি?"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:drawableEndCompat="@drawable/down_arrow" />
+
+                    <TextView
+                        android:id="@+id/ans14"
+                        android:autoLink="web"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:singleLine="false"
+                        android:text="আপনি www.incometax.gov.bd ওয়েব সাইট থেকে খুব সহজে ঠিকানা, মোবাইল নম্বও ও ইমেইল এড্রেস পরিবর্তন করতে পারবেন। উক্ত ওয়েব সাইট Login করে Change Contact মেনুতে ক্লিক করুন। স্ক্রিনে নতুন ফর্ম দেখতে পাবেন।প্রয়োজনীয় পরিবর্তন শেষে নিচে কেন তথ্য পরিবর্তন করেছেন তার কারণ “Update Resoon” বক্সে লিখুন। অত:পর Save বাটনে ক্লিক করুন। আপনার পরিবর্তিত তথ্য ডাটাবেইজে সংরক্ষিত হয়ে যাবে।"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:neumorph_shapeType="pressed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/que15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:gravity="center_vertical"
+                        android:padding="4dp"
+                        android:singleLine="false"
+                        android:text="আমি কিভাবে আমার নিবন্ধন বাতিল করতে পারি?"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:drawableEndCompat="@drawable/down_arrow" />
+
+                    <TextView
+                        android:id="@+id/ans15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:singleLine="false"
+                        android:text="আপনার আয় আয়কর আরোপ যোগ্য সীমার নিচে নেমে গেলে এবং যদি আপনার মনেহয় নিকট ভবিষ্যতে আয়সীমা ন্যুনতম আয়কর প্রদানের আওতায় আসবে না তাহলে আপনি সংশ্লিষ্ট সার্কেলের উপকর কমিশনার বরাবর টিআইএন বাতিলেন জন্য কারন ব্যাখ্যা করে আবেদন করতে পারেন। উপকর কমিশনার Inspection বা Hearing এর মাধ্যমে অথবা আবেদনের উপর ভিত্তি করে আপনার টিআইএন এর কার্যক্রম স্থগিত বা বাতিল করতে পারে।"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:neumorph_shapeType="pressed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/que16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:gravity="center_vertical"
+                        android:padding="4dp"
+                        android:singleLine="false"
+                        android:text="আয়কর আরোপযোগ্য সীমা কি?"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:drawableEndCompat="@drawable/down_arrow" />
+
+                    <TextView
+                        android:id="@+id/ans16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:singleLine="false"
+                        android:text="সরকার কর্তিক ঘুষিত আয় যা অতিক্রম করিলে আয়কর প্রদানের জন্য উপযুক্ত বলে বিবেচিত হবেন। আয়কর আরোপযোগ্য সীমা হচ্ছে:\n\n১) ব্যক্তি করদাতা (অনিবাসী বাংলাদেশী সহ), হিন্দু যৌথ পরিবার, অংশীদারী ফার্ম, ব্যক্তি সংঘ এবং আইনের দ্বারা সৃষ্ট কৃত্রিম ব্যক্তির আয়ের সীমা ২,৫০,০০০/= টাকা\n(২) মহিলা এবং ৬৫ বৎসর বা তদুর্ধ্ব বয়সের ব্যক্তিদের আয়ের সীমা ৩,০০,০০০/= টাকা\n(৩) প্রতিবন্ধি করদাতাদের আয়ের সীমা ৩,৭৫,০০০/= টাকা\n(৪) গেজেট ভুক্ত যুদ্ধাহত মুক্তি যোদ্ধাদের আয়ের সীমা ৪,২৫,০০০/= টাকা"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:neumorph_shapeType="pressed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/que17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:gravity="center_vertical"
+                        android:padding="4dp"
+                        android:singleLine="false"
+                        android:text="প্রবাসি আয়ের ওপর প্রযোজ্য করহার কত?"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:drawableEndCompat="@drawable/down_arrow" />
+
+                    <TextView
+                        android:id="@+id/ans17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:singleLine="false"
+                        android:text="অনিবাসী বাংলাদেশী ব্যতীত বাংলাদেশে অনিবাসী এমন ব্যক্তি-করদাতার কর হার ৩০% বলবৎ আছে। তবে অনিবাসী ব্যক্তি-করদাতা বাংলাদেশী নাগরিক হলে তাঁর আয়ের ক্ষেত্রে বাংলাদেশী নিবাসীদের জন্য প্রযোজ্য হারে অর্থাৎ ০%, ১০%, ১৫%, ২০%, ২৫% ও ৩০% আয়কর এবং সারচার্জ প্রদেয় হবে।"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:neumorph_shapeType="pressed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/que18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:gravity="center_vertical"
+                        android:padding="4dp"
+                        android:singleLine="false"
+                        android:text="টিডিএস কি?"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:drawableEndCompat="@drawable/down_arrow" />
+
+                    <TextView
+                        android:id="@+id/ans18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:singleLine="false"
+                        android:text="ট্র্যাক্স ডিডাকসান এটসোর্স (উৎসে কর কর্তন)। করদাতার আয় থেকে উৎসে কর্তনের জন্য দায়িত্বপ্রাপ্ত সত্তা কর্তিক উৎস কর কেটে রাখা হলে তা প্রচলিত রিটার্ন ফরম আইটি-১১গ এর ১৬ নং ক্রমিকে আয়বছরে উল্লেখ করতে হবে। যেমন বেতন, ব্যাংক সুদ, গৃহ-সম্পত্তির বার্ষিক ভাড়া, পেশাগত ফি, ইত্যাদি থেকে উৎসে কেটে রাখা কর এখানে দেখাতে হবে। উৎস কেটে রাখা করের স্বপক্ষে কর কর্তনকারী কর্তৃপক্ষের সার্টিফিকেট রিটার্নের সাথে দাখিল করতে হবে।"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:neumorph_shapeType="pressed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/que19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:gravity="center_vertical"
+                        android:padding="4dp"
+                        android:singleLine="false"
+                        android:text="আগাম আয়কর কী?"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:drawableEndCompat="@drawable/down_arrow" />
+
+                    <TextView
+                        android:id="@+id/ans19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:singleLine="false"
+                        android:text="অগ্রিম আয়কর (এআইটি) এক ধরনের কর যা বাণিজ্যিক উদ্দেশ্যে আমদানি করা পণ্যের উপর অর্পিত হয়। অনিবন্ধিত আমদানিকারকদের করের আওতায় আনতে ২০০৭ এ এই কর ব্যবস্তা চালু করা হয়। উল্লেখ্য যে, Return জমা দেয়ার সময় এআইটি একই ভাবে withholding tax এর মতই গণ্য হবে।"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:neumorph_shapeType="pressed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/que20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:gravity="center_vertical"
+                        android:padding="4dp"
+                        android:singleLine="false"
+                        android:text="কোন কোন সেবা হতে উৎসে আয়কর কর্তনযোগ্য? করের হার কত?"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:drawableEndCompat="@drawable/down_arrow" />
+
+                    <TextView
+                        android:id="@+id/ans20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:singleLine="false"
+                        android:text="পেশাদারী পরিষেবা জন্য ফি প্রযুক্তিগত সেবা জন্য ফি \n\n• কোন পারিশ্রমিক বা ফি বা কমিশন যে নামেই ডাকাহোক না কেন যা একজন পরিচালক কে প্রদান করা হয়েছে, যা বেতন প্রকৃতিতে নয় এমন আয় রয়েলিটি\n• কোন সমষ্টি আয় যা অধ্যায় 28 এর দফা (VA) এ উল্লিখিত যা অসম্পূর্ণ পেমেন্টর সঙ্গে সম্পর্কযুক্ত"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:neumorph_shapeType="pressed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/que21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:gravity="center_vertical"
+                        android:padding="4dp"
+                        android:singleLine="false"
+                        android:text="কর অবকাশ কি?"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:drawableEndCompat="@drawable/down_arrow" />
+
+                    <TextView
+                        android:id="@+id/ans21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:singleLine="false"
+                        android:text="কর অবকাশ (ট্যাক্স হলিডে) হচ্ছে অস্থায়ী কর হ্রাস বা বর্জন ব্যবস্তা । সেসব শিল্প প্রতিষ্ঠান কে কর অবকাশ দেয়া হয়েছে যারা শিল্প অঙ্গীকার করেছে এবং সকল শর্ত পূরণ করে ১ জুলাই ২০১১ থেকে ৩০ জুন ২০১৯ এর মধ্যে ভৌত অবকাঠামো প্রতিষ্ঠিত করেছে।"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:neumorph_shapeType="pressed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/que22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:gravity="center_vertical"
+                        android:padding="4dp"
+                        android:singleLine="false"
+                        android:text="কর প্রণোদনা কি?"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:drawableEndCompat="@drawable/down_arrow" />
+
+                    <TextView
+                        android:id="@+id/ans22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:singleLine="false"
+                        android:text="কর হ্রাস যার মাধ্যমে কোন বাক্তি বা প্রতিষ্ঠান কে দেশের অর্থনীতিতে অবদান রাখতে উত্সাহিত করবে।"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:neumorph_shapeType="pressed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/que23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:gravity="center_vertical"
+                        android:padding="4dp"
+                        android:singleLine="false"
+                        android:text="করবর্ষ কি?"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:drawableEndCompat="@drawable/down_arrow" />
+
+                    <TextView
+                        android:id="@+id/ans23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:singleLine="false"
+                        android:text="সাধারণতঃ আয় বর্ষের পরবর্তী বর্ষকে কর বর্ষ বলা হয়। যেমন, ১লা জুলাই ২০১৪ হতে ৩০ শে জুন ২০১৫ সময়কাল পর্যন্ত উপার্জিত আয়ের আয়বর্ষ হইবে ২০১৪-২০১৫ এবং করবর্ষ হইবে পরবর্তী বর্ষ অর্থাৎ ২০১৫-২০১৬।"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:neumorph_shapeType="pressed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/que24"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:gravity="center_vertical"
+                        android:padding="4dp"
+                        android:singleLine="false"
+                        android:text="রিটার্ন দাখিলের পদ্ধতি গুলি কি?"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:drawableEndCompat="@drawable/down_arrow" />
+
+                    <TextView
+                        android:id="@+id/ans24"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:singleLine="false"
+                        android:text="বর্তমানে আয়কর রির্টান দাখিলের দুটি পদ্ধতি প্রচলিত আছে, যথা\n\n(১) সাধারণ পদ্ধতি এবং\n(২) সার্বজনীন স্বনির্ধারণী পদ্ধতি।"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:neumorph_shapeType="pressed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/que25"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:gravity="center_vertical"
+                        android:padding="4dp"
+                        android:singleLine="false"
+                        android:text="কোন সময়ে আয়কর রিটার্ন জমা দিতে হয়?"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:drawableEndCompat="@drawable/down_arrow" />
+
+                    <TextView
+                        android:id="@+id/ans25"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:singleLine="false"
+                        android:text="কোম্পানী ব্যতীত অন্যান্য সকল শ্রেণীর করদাতার ক্ষেত্রে প্রতি বছর ১ জুলাই থেকে ৩০ সেপ্টেম্বর এই ৩ মাস সময়সীমার মধ্যে আয়কর রিটার্ন দাখিল করতে হয়। নির্ধারিত সময়ের মধ্যে রিটার্ন দাখিল করা সম্বব না হলে একজন করদাতা রিটার্ন দাখিলের সময়সীমা বাড়ানোর জন্য উপযুক্ত কারণ উল্লেখ করে উপ কর কমিশনারের কাছে সময়ের আবেদন করতে পারেন। সময় মঞ্জুর হলে বর্ধিত সময়ের মধ্যে সাধারণ অথবা সার্বজনীন স্বনির্ধারণী পদ্ধতির আওতায় রিটার্ন দাখিল করা সম্ভব।"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

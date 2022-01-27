@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">INCOME TAX BD</string>
+
+    <string name="etin_into">
+
+        ‘e-TIN পদ্ধতি’ এর মাধ্যমে Registration / Re registration পূর্বক টিআইএন গ্রহণ \n\n
+
+জাতীয় রাজস্ব বোর্ড ১ জুলাই ২০১৩ হতে পুরোনো ১০ (দশ) ডিজিটের টিআইএনের পরিবর্তে নতুন ১২ (বার) ডিজিটের টিআইএন প্রবর্তন করেছে। নব প্রবর্তিত ‘e TIN পদ্ধতি’ তে ইন্টারনেটের মাধ্যমে পুরোনো করদাতাগণ Re-registration এবং নতুন করদাতাগণ Registration এর মাধ্যমে ১২ (বার) ডিজিটের টিআইএন গ্রহণ করতে পারবেন। ‘e-TIN পদ্ধতি’ তে টিআইএন গ্রহণের জন্য করদাতাদের জাতীয় রাজস্ব বোর্ডের নির্ধারিত ওয়েবসাইট
+
+www.incometax.gov.bd ব্রাউজ করে প্রয়োজনীয় তথ্য প্রদান সাপেক্ষ Registration / Re-registration কার্যক্রম সম্পন্ন করতে হবে। \n\n
+
+‘e-TIN পদ্ধতি’ তে Registration / Re-registration সম্পন্ন করতে প্রত্যেক করদাতাকে প্রথমে তার ইউজার ID তৈরী করতে হবে। ইউজার ID তৈরী করার জন্য
+
+www.incometax.gov.bd ওয়েবসাইটে প্রবেশ করে Register মেনুতে ক্লিক করতে হবে।
+    </string>
+
+    <string name="etin_details">
+
+    </string>
+
+
+    <array name="location">
+        <item>Dhaka or Chittagong city corporation</item>
+        <item>Other city corporation</item>
+        <item>Area other than city corporation</item>
+    </array>
+</resources>

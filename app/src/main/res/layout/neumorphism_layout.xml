@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    >
+
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/edittext_card"
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:neumorph_shadowElevation="6dp">
+
+        <TextView
+            android:id="@+id/edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="e-TIN"
+            android:padding="8dp"
+            android:textColor="@color/text_color"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_card"
+        app:neumorph_shapeType="basin">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:autoLink="all"
+                    android:linksClickable="true"
+                    android:padding="5dp"
+                    android:background="#DAE8FC"
+                    android:text="@string/etin_into"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:autoLink="all"
+                    android:linksClickable="true"
+                    android:padding="5dp"
+                    android:text="অনলাইনে টিআইএন রেজিস্ট্রেশন এবং রি রেজিস্ট্রেশনের জন্য যা প্রয়োজন"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TableRow
+                        android:layout_marginBottom="5dp"
+                        android:background="#0079D6"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="করদাতার ধরন"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="প্রয়োজনীয় তথ্যাবলী"
+                            android:textColor="@color/white" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:text="প্রাপ্ত বয়স্ক বাংলাদেশী নাগরিক" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="১. জাতীয় পরিচিতি নম্বর/ পাসপোর্ট নম্বর, (ইসুর্য ও মেয়াদ উত্তীর্ণের তারিখসহ) এবং\n\n২. পূর্বের টিআইএন (রি রেজিস্ট্রেশনের ক্ষেত্রে)" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:text="অপ্রাপ্ত বয়স্ক বাংলাদেশী নাগরিক" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="১. অভিভাবকের ১২ ডিজিটের টিআইএন (নতুন পদ্ধতি অনুযায়ী রেজিস্ট্রেশনকৃত)\n\n২. সদ্য তোলা ডিজিটাল ফরম্যাটের পাসপোর্ট সাইজ ছবি, এবং\n\n৩. পূর্বের টিআইএন (রি রেজিস্ট্রেশনের ক্ষেত্রে)" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:text="প্রাপ্ত বয়স্ক বিদেশী নাগরিক" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="১. পাসপোর্ট নম্বর (ইসু ও মেয়াদ উত্তীর্ণের তারিখসহ) এবং\n\n২. ভিসা নম্বর ও তারিখ,\n\n৩. ডিজিটাল ফরম্যাটে সদ্য তোলা পাসপোর্ট সাইজ ছবি এবং\n\n৪. পূর্বের টিআইএন (রি রেজিস্ট্রেশনের ক্ষেত্রে)" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:text="অপ্রাপ্ত বয়স্ক বিদেশী নাগরিক" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="১. অভিভাবকের ১২ ডিজিটের টিআইএন (নতুন পদ্ধতি অনুযায়ী রেজিস্ট্রেশনকৃত)\n\n২. পাসপোর্ট নম্বর (ইসু ও মেয়াদ উত্তীর্ণের তারিখসহ),\n\n৩. ভিসা নম্বর ও তারিখ,\n\n৪. ডিজিটাল ফরম্যাটে সদ্য তোলা পাসপোর্ট সাইজ ছবি, এবং\n\n৫. পূর্বের টিআইএন (রি রেজিস্ট্রেশনের ক্ষেত্রে)" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:text="প্রাইভেট/পাবলিক লিমিটেড কোম্পানী" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="১. কোম্পানীর ইনকর্পোরেশন নম্বর ও তারিখ; এবং\n\n২. পূর্বের টিআইএন (রি রেজিস্ট্রেশনের ক্ষেত্রে)" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:text="বিদেশী কোম্পানী/ লিয়াজো অফিস" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="১. কোম্পানীর ইনকর্পোরেশন নম্বর ও তারিখ; এবং\n\n২. পূর্বের টিআইএন (রি রেজিস্ট্রেশনের ক্ষেত্রে) " />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:text="কর্পোরেশন" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="১. কর্পোরেশন গঠনের গেজেট নম্বর ও তারিখ; এবং\n\n২. পূর্বের টিআইএন (রি রেজিস্ট্রেশনের ক্ষেত্রে)" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:text="অন্যান্য কোম্পানী (আয়কর অধ্যাদেশের(২০) ধারার সংজ্ঞানুযায়ী)" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="১. যথোপযুক্ত কর্তৃপক্ষের অনুমোদনের রেফারেন্স নম্বর ও তারিখ; এবং\n\n২. পূর্বের টিআইএন (রি রেজিস্ট্রেশনের ক্ষেত্রে)" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:text="পার্টনারশীপ ফার্ম |(RJSC কর্তৃক রেজিস্ট্রিকৃত)" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="১. রেজিস্ট্রর অব জয়েন্ট স্টক কোম্পানিজ এন্ড ফার্মস এর রেজিস্ট্রেশন নম্বর ও তারিখ,\n\n২. অংশীদারদের ১২ ডিজিটের টিআইএন; এবং\n\n৩. পূর্বের টিআইএন (রি রেজিস্ট্রেশনের ক্ষেত্রে)" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:text="পার্টনারশীপ ফার্ম (RJSC কর্তৃক রেজিস্ট্রিক্রত নয়/ ব্যাক্তিসংঘ(এ ও পি)" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="১. অংশীদার/ব্যক্তিসংঘ গঠনকারী সদস্যদের ১২ ডিজিটের টিআইএন; এবং\n\n২. পূর্বের টিআইএন (রি রেজিস্ট্রেশনের ক্ষেত্রে)" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:text="অবিভক্ত হিন্দু পরিবার" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="১. ক্ষমতাপ্রাপ্ত ব্যক্তির ১২ ডিজিটের টিআইএন, এবং\n\n২. পূর্বের টিআইএন (রি রেজিস্ট্রেশনের ক্ষেত্রে)" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:text="লোকাল অথরিটি" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="১. লোকাল অথরিটি গেজেট নম্বর ও তারিখ; এবং\n\n২. পূর্বের টিআইএন(রি রেজিস্ট্রেশনের ক্ষেত্রে)" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAE8FC"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:text="আইন দ্বারা সৃষ্ট কৃত্রিম ব্যক্তিসত্ব,(এনজিও/কো অপারেটিভ সোসাইটি/ট্রাস্ট/ফাউন্ডেশ/ নারাজনৈতিকদল/ সাংস্কৃতিক/সামাজিক ক্রীড়া সংগঠন/ ধর্মীয় দাতব্য প্রতিষ্ঠান" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="১. যথোপযুক্ত কর্তৃপক্ষের রেফারেন্স নম্বর ও তারিখ; এবং\n\n২. পূর্বের টিআইএন (রি রেজিস্ট্রেশনের ক্ষেত্রে)" />
+
+                    </TableRow>
+                </TableLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </soup.neumorphism.NeumorphCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
